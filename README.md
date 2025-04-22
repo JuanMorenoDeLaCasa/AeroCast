@@ -8,7 +8,7 @@
 
 ## 🎯 Objetivo
 
-AeroCast nace para monitorizar condiciones ambientales en entornos aislados a más de **2000 m snm**, donde no hay infraestructura local. Con este proyecto se pretende:
+AeroCast nace para monitorizar condiciones ambientales en entornos aislados, donde no hay infraestructura local. Con este proyecto se pretende:
 
 - **Registrar** temperatura y humedad con precisión profesional.
 - **Capturar** imágenes periódicas de la ubicación remota para supervisión visual.
@@ -27,7 +27,7 @@ Esta solución combina hardware abierto, software libre y conectividad 4G para f
 </div>
 
 1. **Temperatura & Humedad**  
-   - Sensor **DHT22** o **BME280** con alta resolución.  
+   - Sensor **SHT35** con alta resolución.  
 2. **Monitorización de Batería**  
    - Módulo **INA219** en bus I2C mide voltaje, corriente y consumo, generando métricas de autonomía.
 
@@ -41,7 +41,7 @@ Estas lecturas se transmiten mediante MQTT al backend para almacenamiento y visu
   <img src="assets/camera.jpg" alt="Webcam HD" width="300"/>
 </div>
 
-- Se toma **una foto cada 5 min** con la cámara HD (MJPEG desactivado).  
+- Se toma **una foto cada 5 min** con la cámara Full HD  
 - Las instantáneas se suben al servidor y al dashboard para crear un histórico visual.  
 - Ideal para seguimiento de cambios en el entorno: nieve, vegetación, fauna.
 
@@ -97,9 +97,9 @@ Esta capa asegura alcance global y redundancia en conexión.
   <img src="assets/architecture.png" alt="Arquitectura del sistema" width="500"/>
 </div>
 
-1. **Hardware:** Raspberry Pi 4B + sensores I2C + cámara HD + módem 4G.  
-2. **Backend:** Python 3 + Flask + MQTT, API REST para datos e imágenes.  
-3. **Base de datos:** SQLite local para logs y métricas.  
+1. **Hardware:** Raspberry Pi cero 2w + sensores I2C + cámara Full HD + módem 4G.  
+2. **Backend:** Python 3 + Flask + MQTT.
+3. **Base de datos:** Influxdb para métricas.  
 4. **Visualización:**  
    - **Grafana** para dashboards internos.  
    - **React + Chart.js** en portal público (`meteomagina.es`).
@@ -130,6 +130,6 @@ La modularidad permite añadir sensores, migrar DB o integrar nuevos servicios.
 ## ✉️ Contacto
 
 - **Autor:** Juan Moreno De La Casa  
-- **Email:** [juan.moreno@example.com](mailto:juan.moreno@example.com)  
+- **Email:** [usuariojuanito@gmail.com](mailto:usuariojuanito@gmail.com)  
 - **Repo GitHub:** [AeroCast](https://github.com/JuanMorenoDeLaCasa/AeroCast)
 
