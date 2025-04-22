@@ -114,7 +114,7 @@ La modularidad permite añadir sensores, migrar DB o integrar nuevos servicios.
   <img src="assets/galeria1.jpg" alt="Vista remota" width="240"/>
   <img src="assets/galeria2.jpg" alt="Instalación" width="240"/>
   <img src="assets/galeria3.jpg" alt="Hardware interno" width="240"/>
-  <img src="assets/galeria4.jpg" alt="Gráficos de datos" width="240"/>
+  <img src="assets/galeria4.png" alt="Gráficos de datos" width="240"/>
 </div>
 
 > Sustituye las imágenes de `assets/` con tus propias capturas para actualizar la galería.
