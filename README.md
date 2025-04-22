@@ -1,11 +1,3 @@
-<p align="center">
-  <img src="assets/logo.png" alt="AeroCast Logo" width="150"/>
-  <h1 align="center">🛰️ AeroCast</h1>
-  <p align="center"><em>Estación meteorológica remota con webcam HD y conectividad 4G</em></p>
-</p>
-
----
-
 ## 🎯 Objetivo
 
 AeroCast nace para monitorizar condiciones ambientales en entornos aislados, donde no hay infraestructura local. Con este proyecto se pretende:
@@ -23,7 +15,7 @@ Esta solución combina hardware abierto, software libre y conectividad 4G para f
 ## 🌡️ Sensores Ambientales
 
 <div align="center">
-  <img src="assets/sensor.jpg" alt="Sensor DHT22" width="300"/>
+  <img src="assets/sensor.jpg" alt="Sensor SHT35" width="300"/>
 </div>
 
 1. **Temperatura & Humedad**  
@@ -38,7 +30,7 @@ Estas lecturas se transmiten mediante MQTT al backend para almacenamiento y visu
 ## 📷 Captura de Imágenes
 
 <div align="center">
-  <img src="assets/camera.jpg" alt="Webcam HD" width="300"/>
+  <img src="assets/camara.jpg" alt="Webcam HD" width="300"/>
 </div>
 
 - Se toma **una foto cada 5 min** con la cámara Full HD  
@@ -50,12 +42,12 @@ Estas lecturas se transmiten mediante MQTT al backend para almacenamiento y visu
 ## 🔋 Alimentación Autónoma
 
 <div align="center">
-  <img src="assets/power.jpg" alt="Panel Solar" width="300"/>
+  <img src="assets/panel.jpg" alt="Panel Solar" width="300"/>
 </div>
 
 - **Panel Solar 30 W** para carga diaria incluso con luz tenue.  
 - **Batería Li-ion 40 Ah (3.7 V)**, con suficientes ciclos para varios días en mal tiempo.  
-- **Gestión energética** con INA219 y protecciones (diodos y regulador).
+- **Gestión energética** con INA219 y protecciones (diodos y regulador) y un controlador mppt
 
 Permite operación continua sin mantenimiento frecuente.
 
@@ -64,7 +56,7 @@ Permite operación continua sin mantenimiento frecuente.
 ## 📡 Conectividad 4G
 
 <div align="center">
-  <img src="assets/4g.jpg" alt="Módem 4G" width="300"/>
+  <img src="assets/4G.png" alt="Módem 4G" width="300"/>
 </div>
 
 - **Waveshare 4G LTE Hat** instalado en Raspberry Pi.  
@@ -93,10 +85,6 @@ Esta capa asegura alcance global y redundancia en conexión.
 
 ## 🛠️ Arquitectura & Software
 
-<div align="center">
-  <img src="assets/architecture.png" alt="Arquitectura del sistema" width="500"/>
-</div>
-
 1. **Hardware:** Raspberry Pi cero 2w + sensores I2C + cámara Full HD + módem 4G.  
 2. **Backend:** Python 3 + Flask + MQTT.
 3. **Base de datos:** Influxdb para métricas.  
@@ -111,9 +99,7 @@ La modularidad permite añadir sensores, migrar DB o integrar nuevos servicios.
 ## 📸 Galería
 
 <div align="center">
-  <img src="assets/galeria1.jpg" alt="Vista remota" width="240"/>
-  <img src="assets/galeria2.jpg" alt="Instalación" width="240"/>
-  <img src="assets/galeria3.jpg" alt="Hardware interno" width="240"/>
+  <img src="assets/hardware.jpg" alt="Hardware interno" width="240"/>
   <img src="assets/galeria4.png" alt="Gráficos de datos" width="240"/>
 </div>
 
