@@ -101,8 +101,8 @@ La modularidad permite añadir sensores, migrar DB o integrar nuevos servicios.
 <div align="center">
   <img src="assets/hardware.jpg" alt="Hardware interno" width="240"/>
   <img src="assets/galeria4.png" alt="Gráficos de datos" width="240"/>
-  <img src="assets/CERO 2W.jpg" alt="Hardware interno" width="240"/>
-  <img src="assets/MPPT.jpg" alt="Gráficos de datos" width="240"/>
+  <img src="assets/ZERO 2W.jpg" alt="Raspberry" width="240"/>
+  <img src="assets/MPPT.jpg" alt="Mppt" width="240"/>
 </div>
 
 > Sustituye las imágenes de `assets/` con tus propias capturas para actualizar la galería.
