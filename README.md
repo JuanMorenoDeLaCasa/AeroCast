@@ -105,7 +105,7 @@ La modularidad permite añadir sensores, migrar DB o integrar nuevos servicios.
   <img src="assets/MPPT.jpg" alt="Mppt" width="240"/>
 </div>
 
-> Sustituye las imágenes de `assets/` con tus propias capturas para actualizar la galería.
+
 
 ---
 
